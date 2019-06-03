@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>locality.nyc - exploring the neighborhoods of New York City</title>
-
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBhmjsRow4-pvZUzsPdYtoS6hyGAu-HqfI&amp;v=3.exp'></script>
     <script src='application.js'></script>
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -58,6 +57,19 @@
           <input id="map_style--default" name="map_style" type="radio" value="default" /> Normal
         </label>
       </div>
+      <!--
+        STATISTICS
+
+        Total neighborhoods: 2342
+        Manhattan: 432
+        Queens: 353
+        ...
+
+        Largest neighborhood:
+          Blah, 432 ac, 5.16 mi
+        Smallest neighborhood:
+          Foo bar, 112 ac, 5.6 mi
+      -->
       <footer class="mobile-menu-footer">
         <a class='play-store' href='https://play.google.com/store/apps/details?id=com.musikanimal.locality.nyc' target='_blank'><img src="images/google-play-badge.png" /></a>
         <br/>
@@ -136,7 +148,11 @@
       <section class="mobile-infowindow"></section>
 
       <footer class="map-footer" itemscope itemtype='http://schema.org/WPFooter' role='contentinfo'>
-        Copyright &copy; 2014-2019 MusikAnimal
+        &copy; 2014-2019 MusikAnimal
+        &middot;
+        <a href="#" class="modal-link" data-target="about-modal">About</a>
+        &middot;
+        <a href="#" class="modal-link" data-target="attribution-modal">Attribution</a>
         &middot;
         <a href='mailto:musikanimal+locality.nyc@gmail.com?subject=locality.nyc+feedback'>Feedback</a>
       </footer>
@@ -157,7 +173,7 @@
       <div class="modal-content">
         <header class="modal-header">
           <strong>About locality.nyc</strong>
-          <button class="modal-close">&#10005;</button>
+          <button class="modal-close"></button>
         </header>
         <div class="modal-body">
           <p>
@@ -186,7 +202,7 @@
           <strong>
             Attribution
           </strong>
-          <button class="modal-close">&#10005;</button>
+          <button class="modal-close"></button>
         </header>
         <div class="modal-body">
           <p>
@@ -212,7 +228,7 @@
             Share
             <span class="share-modal--name"></span>
           </strong>
-          <button class="modal-close">&#10005;</button>
+          <button class="modal-close"></button>
         </header>
         <div class="modal-body">
           <input type="text" id="share_url_input" />
