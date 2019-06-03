@@ -346,6 +346,10 @@ button {
   }
 }
 
+.mobile-hamburger-menu {
+  display: none;
+}
+
 .modal {
   bottom: 0;
   display: none;
@@ -464,6 +468,7 @@ button {
   color: $footer-text-color;
   cursor: pointer;
   display: block;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   margin-left: 8px;
   position: relative;
